@@ -1,12 +1,12 @@
 <?php
-
-/**
+/*
  * Laravel - A PHP Framework For Web Artisans
  *
  * @package  Laravel
  * @author   Taylor Otwell <taylor@laravel.com>
  */
-
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
 /*
 |--------------------------------------------------------------------------
 | Register The Auto Loader
