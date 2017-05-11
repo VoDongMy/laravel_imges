@@ -14,7 +14,14 @@ function markdown($text)
 }
 
 Route::get('/', function () {
-    return view('marketing')->with(['currentVersion' => DEFAULT_VERSION]);
+	$res = ['status' => 200,
+                'messages' => 'request success',
+                'sever_name'=>'Demo_Diff_Images', 
+                'language' => 'php',
+                'database' => 'mysql',
+                'version' => '',
+                'description' => ''];
+    dd($res);  
 });
 
 Route::get('docs', 'DocsController@showRootPage');
